@@ -5,7 +5,7 @@ pipeline {
             steps {
           sh "export AWS_DEFAULT_REGION=us-east-1"
           
-sh "aws cloudformation  delete-stack --stack-name myteststack4"
+sh "aws cloudformation  delete-stack --stack-name myteststack4 --region 'us-east-1'"
           
           }
         }
